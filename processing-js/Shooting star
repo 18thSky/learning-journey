@@ -1,0 +1,12 @@
+var xPos = 200;
+var yPos = 390;
+
+draw = function() {
+    background(29, 40, 115);
+    fill(255, 242, 0);
+    ellipse(xPos, yPos, 6, 15);
+    fill(245, 245, 245);
+    triangle(155,60,140,60,145,10);
+    triangle(155,30,140,30,145,5);
+    //yPos -=1;
+};
