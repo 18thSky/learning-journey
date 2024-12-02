@@ -1,3 +1,4 @@
+noStroke();
 var xPos = 200;
 var yPos = 390;
 
@@ -6,7 +7,24 @@ draw = function() {
     fill(255, 242, 0);
     ellipse(xPos, yPos, 6, 15);
     fill(245, 245, 245);
-    triangle(155,60,140,60,145,10);
-    triangle(155,30,140,30,145,5);
+    triangle(150,10,140,25,160,25);//Star 1 Up
+    triangle(150,30,140,15,160,15);//Star 1 down
+    triangle(100,25,90,45,110,45);//Star 2 Up
+    triangle(100,50,90,30,110,30);//Star 2 down
+    triangle(50,10,40,25,60,25);//Star 3 Up
+    triangle(50,30,40,15,60,15);//Star 3 Down
+    triangle(200,35,190,50,210,50);//Star 4 Up
+    triangle(200,55,190,40,210,40);//Star 4 Down
+    triangle(370,10,360,25,380,25);//Star 5 Up
+    triangle(370,30,360,15,380,15);//Star 5 down
+    triangle(250,50,240,70,260,70);//Star 6 Up
+    triangle(250,75,240,55,260,55);//Star 6 down
+    triangle(270,8,260,30,280,30);//Star 7 Up
+    triangle(270,35,260,15,280,15);//Star 7 Down
+    triangle(320,30,310,50,330,50);//Star 8 Up
+    triangle(320,55,310,35,330,35);//Star 8 Down
     //yPos -=1;
 };
+
+
+
