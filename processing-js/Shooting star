@@ -1,11 +1,11 @@
 noStroke();
-var xPos = 200;
-var yPos = 390;
+var xPos = 155;
+var yPos = 0;
 
 draw = function() {
     background(29, 40, 115);
     fill(255, 242, 0);
-    ellipse(xPos, yPos, 6, 15);
+    ellipse(xPos, yPos, -7, 15);
     fill(245, 245, 245);
     triangle(150,10,140,25,160,25);//Star 1 Up
     triangle(150,30,140,15,160,15);//Star 1 down
@@ -23,7 +23,41 @@ draw = function() {
     triangle(270,35,260,15,280,15);//Star 7 Down
     triangle(320,30,310,50,330,50);//Star 8 Up
     triangle(320,55,310,35,330,35);//Star 8 Down
-    //yPos -=1;
+    
+    rect(50,200,70,200);//background white
+    fill(0, 0, 0);
+    rect(60,210,10,15);//1st Top floor
+    rect(80,210,10,15);//Top floor
+    rect(100,210,10,15);//Top floor
+    rect(60,240,10,15);//Second floor
+    rect(80,240,10,15);//Second floor
+    rect(100,240,10,15);//Second floor
+    rect(60,270,10,15);//Third floor
+    rect(80,270,10,15);//Third floor
+    rect(100,270,10,15);//Third floor
+    rect(60,300,10,15);//Fourth floor
+    rect(80,300,10,15);//Fourth floor
+    rect(100,300,10,15);//Fourth floor
+    rect(60,330,10,15);//fifth floor
+    rect(80,330,10,15);//fifth floor
+    rect(100,330,10,15);//fifth floor
+    rect(60,360,10,15);//Sixth floor
+    rect(80,360,10,15);//Sixth floor
+    rect(100,360,10,15);//Sixth floor
+    rect(75,385,20,20);//Entrance Door
+    
+    fill(255, 255, 255);
+    rect(220,150,100,250);//background white
+    fill(0, 0, 0);
+    rect(230,160,80,20);//Window 1
+    rect(230,190,80,20);//Window 2
+    rect(230,220,80,20);//Window 3
+    rect(230,250,80,20);//Window 4
+    rect(230,280,80,20);//Window 5
+    rect(230,310,80,20);//Window 6
+    rect(230,340,80,20);//Window 7
+    rect(245,370,50,30);//Entrance Door
+    yPos +=1;
 };
 
 
