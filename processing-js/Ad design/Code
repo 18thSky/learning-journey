@@ -1,0 +1,20 @@
+background(145, 162, 166);
+fill(0, 0, 0);
+textSize(30);
+text("HIGHSPECS", 110, 60);
+textSize(14);
+text("Computerized Eye testing, providing unique variety specs", 17, 85);
+textSize(10);
+strokeWeight(5);
+line(1,370,400,370);
+text("Address: 123, La Couijla CA-425121", 10, 388);
+text("Phone-no. : 8778678967", 285, 388);
+
+stroke(135, 84, 84);
+strokeWeight(5);
+fill(255, 255, 255);
+ellipse(150,180,85,75);
+ellipse(255,180,85,75);
+line(195,180,210,180);
+line(30,122,108,180);
+line(370,122,298,180);
