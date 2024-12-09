@@ -1,20 +1,37 @@
-background(145, 162, 166);
+background(242, 155, 155);
+
 fill(0, 0, 0);
-textSize(30);
-text("HIGHSPECS", 110, 60);
+var a=createFont("fantasy");
+textFont(a);
+textSize(40);
+text("HIGHSPECS", 104, 70);
+
+var a=createFont("monospace");
+textFont(a);
 textSize(14);
-text("Computerized Eye testing, providing unique variety specs", 17, 85);
+text("Computerized Eye testing,", 45, 109);
+line(46,115,234,115);
+text("providing unique variety of specs.", 109, 134);
+line(112,140,368,140);
 textSize(10);
 strokeWeight(5);
 line(1,370,400,370);
 text("Address: 123, La Couijla CA-425121", 10, 388);
 text("Phone-no. : 8778678967", 285, 388);
 
-stroke(135, 84, 84);
+var f=createFont("fantasy");
+textFont(f);
+textSize(30);
+fill(0, 69, 122);
+text("Winter Sale",134,314);
+textSize(20);
+text("Upto 50%*",155,335);
+
+stroke(112, 112, 6);
 strokeWeight(5);
 fill(255, 255, 255);
-ellipse(150,180,85,75);
-ellipse(255,180,85,75);
-line(195,180,210,180);
-line(30,122,108,180);
-line(370,122,298,180);
+ellipse(150,225,85,75);
+ellipse(255,225,85,75);
+line(195,226,210,225);
+line(30,190,108,225);
+line(370,190,298,225);
