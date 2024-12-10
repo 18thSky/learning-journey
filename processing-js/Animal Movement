@@ -1,0 +1,26 @@
+var bodyX = 200;
+var bodyY = 220;
+var bodyW = 118;
+var faceW = bodyW/2;
+var eyeSize = bodyW/8;
+var mouthSize = bodyW/6;
+var mouthWidth = 10;
+var faceWidth=47;
+
+draw = function() {
+    background(207, 254, 255);
+    fill(240, 209, 36);
+    ellipse(bodyX, bodyY, bodyW, 106); // body?
+    ellipse(bodyX, bodyY-70, faceW, faceWidth); // face?
+    fill(0, 0, 0);
+    ellipse(bodyX+15, bodyY-75, eyeSize, mouthWidth); // eye1
+    ellipse(bodyX-15, bodyY-75, eyeSize, mouthWidth); // eye1
+    fill(247, 0, 0);
+    ellipse(bodyX, bodyY-60, mouthSize, mouthWidth); // mouth
+    mouthSize = mouthSize + 0.1;
+    mouthWidth= mouthWidth + 0.1;
+    faceWidth = faceWidth + 0.2;
+    faceW = faceW+ 0.1;
+    eyeSize = eyeSize + 0.01;
+    bodyY--;
+};
