@@ -1,0 +1,21 @@
+var x = 400;
+var y = 200;
+var Size= 110;
+var Width=80;
+var mouthWidth= Width/4;
+var mouthHeight = Size/4;
+
+draw= function(){
+    fill(0, 255, 217);
+    triangle(x+46,y+5,x+87,y-20,x+85,y+20); // Tail
+    fill(255, 194, 194);
+    ellipse(x,y,Size,Width); // Body
+    fill(0, 0, 0);
+    ellipse(x-33,y-20,Size/15,Width/8); // eyes
+    fill(194, 35, 35);
+    ellipse(x-50,y+1,mouthWidth/2,mouthHeight/2); // Mouth
+    mouthHeight= mouthHeight +0.1;
+    mouthWidth =  mouthWidth +0.1;
+    Width = Width + 0.125;
+    x--;
+};
