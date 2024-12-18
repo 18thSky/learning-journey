@@ -1,0 +1,42 @@
+fill(0, 0, 0);
+ellipse(200, 200, 375, 375);
+fill(60, 0, 255);
+triangle(200, 104, 280, 280, 120, 280);
+fill(255, 255, 255);
+var answer = floor(random(1, 5));
+if (answer === 1) {
+    fill(247, 255, 0);
+    triangle(200, 104, 280, 280, 120, 280);
+    fill(0, 0, 0);
+    textFont("Serif",13);
+    text("Cannot", 176, 200);
+    text("Predict now", 167, 229); 
+}else if(answer === 2){
+    fill(42, 168, 51);
+    triangle(200, 104, 280, 280, 120, 280);
+    fill(255, 255, 255);
+    textFont("cursive",13);
+    text("It is", 185, 200);
+    text("Certain", 175, 229); 
+}else if(answer === 3){
+    fill(255, 0, 0);
+    triangle(200, 104, 280, 280, 120, 280);
+    fill(255, 255, 255);
+    textFont("Fantasy",13);
+    text("My source", 172, 200);
+    text("say no", 180, 229); 
+}else if(answer === 4){
+    fill(42, 168, 51);
+    triangle(200, 104, 280, 280, 120, 280);
+    fill(255, 255, 255);
+    textFont("cursive",13);
+    text("Without", 177, 200);
+    text("a doubt", 175, 229); 
+}else if(answer === 5){
+    fill(247, 255, 0);
+    triangle(200, 104, 280, 280, 120, 280);
+    fill(0, 0, 0);
+    textFont("Serif",13);
+    text("Better not", 176, 200);
+    text("tell you now", 159, 229); 
+}
