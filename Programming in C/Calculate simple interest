@@ -1,9 +1,7 @@
 #include <stdio.h>
 
 int main(){
-    int r=8,t=5;
-    float p=34.1,si;
-    si= (p*r*t)/100;
-    printf("The simple interest is %f", si);
+    float p=1000000.0,r=9.5,t=5.0;
+    printf("The simple interest is %f", (p*r*t)/100);
     return 0;
 }
