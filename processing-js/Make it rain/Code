@@ -1,0 +1,26 @@
+var xPositions = [200];
+var yPositions = [0];
+var speed = [1,2,3,4,5];
+var colors= [color(55, 169, 189),color(30, 30, 201),color(29, 115, 207),color(48, 138, 199)];
+
+draw = function() {
+    background(204, 247, 255);
+
+    noStroke();
+
+    for (var i = 0; i < xPositions.length; i++) {
+        fill(colors[i % colors.length]);
+        ellipse(xPositions[i], yPositions[i], 10, 10);
+        yPositions[i] += speed[i % speed.length];
+        if(yPositions[i]>400){
+        yPositions[i]=0;
+    }
+    }
+    
+};
+mouseClicked=function(){
+    xPositions.push(mouseX);
+    yPositions.push(0);
+    speed.push(random(1,4));
+    colors.push(color(random(255),random(255),random(255)));
+};
