@@ -1,0 +1,15 @@
+#include <stdio.h>
+//program using recursion to calculate nth element of fibonnacci series
+int fseries(int);
+
+int fseries(int n){
+    if(n==1||n==2){
+        return n-1;
+    }
+    return fseries(n-1)+ fseries(n-2);
+}
+int main(){
+    int n=7;
+    printf("The value oF fibonnacci series is at %d is %d",n,fseries(n));
+    return 0;
+}
