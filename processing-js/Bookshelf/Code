@@ -1,0 +1,38 @@
+var book =[ {
+    title: "NFS Most Wanted",
+    stars: 5,
+    author: "EA Games",
+    color: color(97, 92, 181)
+},{
+    title: "NFS Carbon",
+    stars: 4,
+    author: "EA Games",
+    color: color(36, 30, 36)
+},{
+    title: "NFS Underground",
+    stars: 3,
+    author: "EA Games",
+    color: color(102, 184, 92)
+}];
+
+// draw shelf
+fill(173, 117, 33);
+rect(0, 130, width, 10);
+
+// draw all 3 book
+for(var j=0;j<book.length;j++){
+fill(book[j].color);
+var x= 10+j*120;
+rect(x, 20, 90, 100);
+fill(255, 255, 255);
+rect(x+5,35,80,40,5);
+
+   // Draw title and author
+fill(0, 0, 0);
+textSize(8);
+text(book[j].title, x+10, 42, 88, 42);
+text(book[j].author, x+21, 57, 70, 77);
+    // Draw stars
+for (var i = 0; i < book[j].stars; i++) {
+    image(getImage("cute/Star"), x+5+ i * 15, 100, 15, 20);
+}}
