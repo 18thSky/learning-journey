@@ -1,0 +1,29 @@
+var SmileyFace=function(centerX,centerY){
+  this.centerX= centerX;
+  this.centerY= centerY;
+};
+
+
+SmileyFace.prototype.draw= function() {
+    fill(168, 124, 70);
+    ellipse(this.centerX, this.centerY, 150, 150);
+    fill(0, 0, 0);
+    ellipse(this.centerX-30, this.centerY-30, 20, 20); 
+    ellipse(this.centerX+30, this.centerY-30, 20, 20); 
+    noFill(); 
+    strokeWeight(3);
+    arc(this.centerX, this.centerY+10, 64, 40, 0, 180);
+};
+
+SmileyFace.prototype.speak= function(message) {
+    text(message,this.centerX+-28,this.centerY+91);
+};
+var face=new SmileyFace(200,300);
+face.draw();
+face.speak("SmileyFace");
+SmileyFace.prototype.speak= function(message) {
+    text(message,this.centerX-40,this.centerY+-98);
+};
+var face1=new SmileyFace(193,94);
+face1.draw();
+face.speak("SmileyFace1");
